@@ -1,0 +1,22 @@
+html, body {
+    background-color: #fff;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    color: #818181;
+    height: 100% !important;
+    overflow:hidden;
+}
+
+#object {
+	visibility: hidden;
+}
+
+.insideobject {
+	color: white;
+	background-color: pink;
+	text-align: center;
+	border: 1px solid red;
+	width: 25%;
+	height: 25%;
+}

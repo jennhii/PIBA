@@ -1,0 +1,59 @@
+<head>
+<link rel="stylesheet" href="objectanimation.css">
+<link rel="stylesheet" href="object.css">
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+<body>
+
+
+<div id="object" class="slideLeft">
+<div class="insideobject">
+1
+</div>
+</div>
+
+<div id="object" class="slideDown">
+<div class="insideobject">
+2
+</div>
+</div>
+
+<div id="object" class="slideRight">
+<div class="insideobject">
+3
+</div>
+</div>
+
+<div id="object" class="slideUp">
+<div class="insideobject">
+4
+</div>
+</div>
+
+<script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideLeft");
+			}
+		});
+	});
+</script>
+<script>
+	$(window).scroll(function() {
+		$('#animatedElement').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+400) {
+				$(this).addClass("slideDown");
+			}
+		});
+	});
+</script>
+
+</body>
