@@ -1,0 +1,500 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'feathericons';
+	src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
+	src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+		url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+		url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
+.grid {
+	position: relative;
+	max-width: 100%;
+	list-style: none;
+	text-align: center;
+	height: 100%;
+	background: rgba(209, 211, 212, .5);
+	opacity: .99;
+}
+
+.grd_box {
+	position: relative;
+	top: 28%;
+    display:block;
+    height:300px;/*change to whatever you want*/
+    padding:7px;/*instead of border*/
+    margin:10px 0;/*to give some clearance*/
+    overflow:hidden;/*hide dat overflow*/
+    white-space:nowrap;/*stop line breaks*/
+    font-size:0;/*remove spacing on children*/
+}
+.box {
+    height:100%;/*fill parent height*/
+    /*width is set with jquery*/
+    display:inline-block;/*show inline*/
+    font-size:16px;/*set font size back*/
+    vertical-align:top;/*align to top*/
+    white-space:normal;/*return whitespace*/
+    zoom:1;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.half { width:50%; display:block}  /*just to show how to contain size without changing all boxes*/
+
+.grd_box { 
+	background: rgba(209, 211, 212, .5);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5); 
+}
+
+body{font-family:sans-serif; }
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+/*project number and text*/
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0px;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+	/*color: #151515;*/
+	color: #F0F0F0;
+	margin: 34px;
+	font-weight: 100;
+}
+
+/* inner box effect */
+figure.effect-layla {
+  display: block;
+
+  /*background-image: url(../img/20.jpg);*/
+  /*background-color: #5B6F78;*/
+/*  background-blend-mode: overlay;*/
+
+  background: rgba(91, 111, 123, .80);
+
+}
+
+figure.effect-layla img {
+	width: 100%;    /*change width in two places*/
+}
+
+figure.effect-layla figcaption {
+	padding: .9em;
+}
+
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after {
+	position: absolute;
+	content: '';
+	opacity: 0;
+
+}
+
+figure.effect-layla figcaption::before {
+	top: 50px;
+	right: 30px;
+	bottom: 50px;
+	left: 30px;
+/*	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;*/
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+figure.effect-layla figcaption::after {
+	top: 30px;
+	right: 50px;
+	bottom: 30px;
+	left: 50px;
+/*	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;*/
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+	-webkit-transform-origin: 100% 0;
+	transform-origin: 100% 0;
+}
+
+figure.effect-layla h2 {
+	padding-top: 100px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-layla p {
+	padding: 0.5em 2em;
+	text-transform: none;
+	opacity: 0;
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+}
+
+figure.effect-layla img,
+ {
+	width: 100% ;   /*change width in two places*/
+	height: auto;
+/*	-webkit-transform: translate3d(0,-30px,0);
+	transform: translate3d(0,-30px,0);*/
+}
+figure.effect-layla h2 { width: 100%; }
+
+figure.effect-layla img,
+figure.effect-layla figcaption::before,
+figure.effect-layla figcaption::after,
+figure.effect-layla p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-layla:hover img {   /*IMG ON HOVER*/
+	opacity: 1; 
+  width:100%;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+  /*background: rgba(44, 66, 75, 1);*/
+}
+
+figure.effect-layla:hover figcaption::before,
+figure.effect-layla:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p {
+	padding-top: 0px;
+	margin-top: -1px;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-layla:hover figcaption::after,
+figure.effect-layla:hover h2,
+figure.effect-layla:hover p,
+figure.effect-layla:hover img {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+/*-----Top Section*/
+
+.top-section {
+	height:99%;
+	border-bottom: 5px solid rgba(209, 211, 212, 1);
+}
+
+/*-----Bottom Section*/
+.container {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin-right: 55px;
+  margin-left: 55px;
+}
+
+.bottomsection {
+  background-color: #263238;
+  overflow: hidden;
+  padding: 0;  
+  width: 100%;
+}
+
+/*-----CSS Animation ONE*/
+
+.bottomsection--one-text {
+    color: #000;
+    background-color: black;
+    float: right;
+    font-size: 4.5em;
+    text-align: center;
+    width: 100%;
+    opacity: .25;
+    transform: translateY(-300px);
+    transition: all 1s ease .15s;
+    will-change: transform;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.visible .bottomsection--one-image,
+.visible .bottomsection--one-text {
+   transform: translateX(0);
+   opacity: 1;
+}
+
+/*-----CSS Animation TWO*/
+
+.bottomsection-two-left {
+  background-color:;
+  overflow: hidden;
+  padding-top: 55px;
+  margin: 0;
+  width: 25%;
+  float: left;
+}
+
+.bottomsection-two-right {
+  background-color:;
+  overflow: hidden;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 75%;
+  float: right;
+}
+
+.bottomsection--two-text {
+	margin-right: 50px;
+  display: inline-block;
+  color: black;
+  float: right;
+  font-size: 1em;
+  line-height: 30px;
+  text-align: left;
+  padding: 30px;
+  opacity: 0;
+  transform: translateX(300px);
+  transition: all 1s ease .15s;
+  will-change: transform;
+  margin-top:30px;
+    /*background: rgba(44, 66, 75, .9);*/
+}
+.bottomsection--two-image {
+   margin-left: 50px;
+   opacity: 0;
+   left:0;
+  width: 75%;
+   height: auto;
+   transform: translateX(-300px);
+   transition: all 1s ease .15s;
+   will-change: transform;
+   /*margin-bottom: 25px;*/
+}
+.visible .bottomsection--two-image,
+.visible .bottomsection--two-text {
+   transform: translateX(0);
+   opacity: 1;
+}
+
+/*-----CSS Animation THREE*/
+
+.bottomsection {
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0;  
+/*  padding-right: 25px;
+    padding-left: 25px;
+    margin-right: 55px;
+    margin-left: 55px;*/
+            }
+.bottomsection--three-text {
+    color: #000;
+    float: right;
+    font-size: 4.5em;
+    text-align: center;
+    width: 100%;
+    opacity: .25;
+    transform: translateY(-300px);
+    transition: all 1s ease .15s;
+    will-change: transform;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+.visible .bottomsection--three-image,
+.visible .bottomsection--three-text {
+   transform: translateX(0);
+   opacity: 1;
+}
+
+.right-button {
+    color: black;
+    float: right;
+    font-size: 1em;
+    text-align: left;
+    width: 100%;
+    /*background: rgba(44, 66, 75, .9);*/
+}
+
+.btn {
+    color:  #999999;
+    font-size: 87.5%;
+    line-height: 121.429%;
+    /*background-color: #f3f3f3;*/
+    border-color: #5B6F7B;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    /*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);*/
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 10px;
+    margin-top:25px;
+    line-height: 23px;
+    width: 33%;
+}
+
+.do-btn {
+    position: static;
+    display: inline-block;
+    left: 34%;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 0px !important;
+}
+
+.btn-large {
+    border-radius: 2px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .bottomsection {
+        min-height: 300px;
+    }
+    .visible .bottomsection--one-image,
+    .visible .bottomsection--one-text,
+    .visible .bottomsection--two-image,
+    .visible .bottomsection--two-text,
+    .visible .bottomsection--three-image,
+    .visible .bottomsection--three-text{
+        display: block;
+        font-size: 1.25em;
+        float: none;
+        height: auto;
+        margin: 20px auto 0;
+        width: auto;
+    }
+}
+
+/*-----Video background*/
+.fullscreen-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    background-color: white;
+}
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fullscreen-box {
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.fullscreen-bg__video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+}
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .fullscreen-bg {
+    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+  }
+
+  .fullscreen-bg__video {
+    display: none;
+  }
+}
