@@ -496,7 +496,7 @@ figure.effect-layla:hover img {
     width: 100%;
     padding:35px;
     opacity: 1;
-    transform: translateY(300px);
+    transform: translate(00px);
     transition: all 1s ease .15s;
     will-change: transform;
 }
