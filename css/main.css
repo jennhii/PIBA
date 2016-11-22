@@ -438,7 +438,7 @@ figure.effect-layla:hover img {
   padding-top: 55px;
   margin: 0;
   width: 35%;
-  height:56%;
+/*  height:56%; piba logo bottom padding*/
   float: left;
 }
 
@@ -447,7 +447,7 @@ figure.effect-layla:hover img {
   overflow: hidden;
   width: 65%;
   float: right;
-  padding-bottom: 50px;
+/*  padding-bottom: 50px;*/
 }
 
 .bottomsection--two-text {
@@ -487,45 +487,31 @@ figure.effect-layla:hover img {
 /*-----CSS Animation THREE*/
 /*------------------------*/
 
-.bottomsection {
-    background-color: #fff;
-    overflow: hidden;
-    padding: 0;  
-  }
-.bottomsection--three-text {
-    color: #000;
-    float: right;
-    font-size: 4.5em;
-    text-align: center;
-    width: 100%;
-    opacity: .25;
-    transform: translateY(-300px);
-    transition: all 1s ease .15s;
-    will-change: transform;
-    margin-top: 50px;
-    margin-bottom: 25px;
-}
-
-.visible .bottomsection--three-image,
-.visible .bottomsection--three-text {
-   transform: translateX(0);
-   opacity: 1;
-}
-
-.right-button {
+.bottomsection-right-button {
+    display: flex;
     color: black;
-    float: right;
+    float: left;
     font-size: 1em;
     text-align: left;
-    width: 95%;
-    padding-right:50px;
+    width: 100%;
+    padding:35px;
+    opacity: 1;
+    transform: translateY(300px);
+    transition: all 1s ease .15s;
+    will-change: transform;
+}
+
+.visible .bottomsection-right-button,
+.visible .bottomsection-right-button {
+   transform: translateX(0);
+   opacity: 1;
 }
 
 .btn {
     color:  #fff;
     background: rgba(91, 111, 123, .80);
     margin-top:25px;
-    width: 33%;
+    width: 15%;
 }
 
 .do-btn {
