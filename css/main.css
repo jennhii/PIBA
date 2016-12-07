@@ -8,7 +8,6 @@
 		  url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
 		  url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
 }
-
 .grid {
 	position: relative;
 	max-width: 100%;
@@ -18,33 +17,28 @@
 	background: rgba(209, 211, 212, .5);
 	opacity: .99;
 }
-
 .grd_box {
 	position: relative;
 	top: 31%;
   display:block;
-  height:350px;/*change to whatever you want*/
-  padding:7px;/*instead of border*/
-  margin:10px 0;/*to give some clearance*/
-  overflow:hidden;/*hide dat overflow*/
-  white-space:nowrap;/*stop line breaks*/
-  font-size:0;/*remove spacing on children*/
+  height:350px;
+  padding:7px;
+  margin:10px 0;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:0;
 }
-
 .box {
-  height:100%;/*fill parent height*/
-  /*width is set with jquery*/
-  display:inline-block;/*show inline*/
-  font-size:16px;/*set font size back*/
-  vertical-align:top;/*align to top*/
-  white-space:normal;/*return whitespace*/
+  height:100%;
+  display:inline-block;
+  font-size:16px;
+  vertical-align:top;
+  white-space:normal;
   zoom:1;
   padding-left: 5px;
   padding-right: 5px;
 }
-
-.half { width:50%; display:block}  /*just to show how to contain size without changing all boxes*/
-
+.half { width:50%; display:block}
 .grd_box { 
 	background: rgba(209, 211, 212, .5);
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
@@ -53,8 +47,8 @@
 }
 
 /*===========================================*/
-/*  Header                                   */
-/* ==========================================*/
+/*  Header                                  */
+/* ========================================*/
 
 #navigation {
     -webkit-transition: all 0.8s ease 0s;
@@ -67,12 +61,8 @@
     border-bottom: 0px;
     height: 70px;
 }
-#navigation.animated-header {
-    padding: 0px;
-}
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border: 0px;
-}
+#navigation.animated-header { padding: 0px; }
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form { border: 0px; }
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: transparent;
     color: #fff;
@@ -98,12 +88,14 @@ h1.navbar-brand img {
     background-color: transparent !important;
 }
 .headertext {
+    visibility: visible;
     font-family: helvetica;
     font-size: 20px;
     color: white;
-    padding-top: 18px;
+    padding-top: 0px;
     padding-left: 5px;
 }
+.headertextsmall { visibility: hidden; }
 .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after, .modal-footer:before, .modal-footer:after {
     display: table;
     content: " ";
@@ -130,11 +122,8 @@ div.arrow-down {
 .social-icons li {
     text-decoration: none;
     margin-top: -8px;
-    /*margin-right: -25px;*/
 }
-.social-icons a {
-    margin-bottom: 0;
-}
+.social-icons a { margin-bottom: 0; }
 #social {
     background-image: url(../img/slider/banner.jpg);
     padding: 0;
@@ -149,12 +138,8 @@ div.arrow-down {
     list-style: none;
     text-align: center;
 }
-.social-button li {
-    display: inline-block;
-}
-.social-button li:nth-child(2) {
-    margin: 0 75px;
-}
+.social-button li { display: inline-block; }
+.social-button li:nth-child(2) { margin: 0 75px; }
 .social-button li a {
     border: 2px solid #fff;
     border-radius: 50%;
@@ -163,7 +148,6 @@ div.arrow-down {
     height: 90px;
     line-height: 96px;
     width: 90px;
-    
     -webkit-transition: all 0.2s ease 0s;
        -moz-transition: all 0.2s ease 0s;
         -ms-transition: all 0.2s ease 0s;
@@ -180,13 +164,15 @@ div.arrow-down {
     right: 5%;
     margin-top: 14px;
 }
-body{font-family:sans-serif; }
-
+body{ font-family:sans-serif; }
 ::-webkit-scrollbar { 
     display: none; 
 }
 
-/* Common style */
+/*==============================*/
+/*  GRID                       */
+/* ===========================*/
+
 .grid figure {
 	position: relative;
 	float: left;
@@ -198,7 +184,6 @@ body{font-family:sans-serif; }
 	text-align: center;
 	cursor: pointer;
 }
-
 .grid figure img {
 	position: relative;
 	display: block;
@@ -206,7 +191,6 @@ body{font-family:sans-serif; }
 	max-width: 100%;
 	opacity: 0.8;
 }
-
 .grid figure figcaption {
 	padding: 2em;
 	color: #;
@@ -215,13 +199,10 @@ body{font-family:sans-serif; }
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
-
 .grid figure figcaption::before,
 .grid figure figcaption::after {
 	pointer-events: none;
-
 }
-
 .grid figure figcaption,
 .grid figure figcaption > a {
 	position: absolute;
@@ -230,9 +211,6 @@ body{font-family:sans-serif; }
 	width: 100%;
 	height: 100%;
 }
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
 .grid figure figcaption > a {
 	z-index: 1000;
 	text-indent: 200%;
@@ -240,53 +218,41 @@ body{font-family:sans-serif; }
 	font-size: 0;
 	opacity: 0;
 }
-
-/*project number and text*/
 .grid figure h2 {
 	word-spacing: -0.15em;
 	font-weight: 300;
 }
-
 .grid figure h2 span {
 	font-weight: 800;
 }
-
 .grid figure h2,
 .grid figure p {
 	margin-top: 30px;
 }
-
 .grid figure p {
 	letter-spacing: .5px;
   line-height: 20px;
 	font-size: 68%;
   text-align: left;
-	/*color: #151515;*/
 	color: #F0F0F0;
 	margin-left: 0px;
   margin-right: 0px;
-  /*COLUMNS*/
-  -webkit-column-count: 3; /* Chrome, Safari, Opera */
-  -moz-column-count: 3; /* Firefox */
-  column-count: 3;
-  -webkit-column-gap: 25px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 25px; /* Firefox */
-  column-gap: 25px;
+    /*COLUMNS*/
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+       -moz-column-count: 3; /* Firefox */
+            column-count: 3;
+    -webkit-column-gap: 25px; /* Chrome, Safari, Opera */
+       -moz-column-gap: 25px; /* Firefox */
+            column-gap: 25px;
 }
 
-/* inner box effect */
+  /* inner box effect */
 figure.effect-layla {
   display: block;
   background: rgba(91, 111, 123, .80);
 }
-
-figure.effect-layla img {
-	width: 100%;    /*change width in two places*/
-}
-
-figure.effect-layla figcaption {
-	padding: .9em;
-}
+figure.effect-layla img { width: 100%;    /*change width in two places*/ }
+figure.effect-layla figcaption { padding: .9em; }
 
 figure.effect-layla figcaption::before,
 figure.effect-layla figcaption::after {
@@ -294,7 +260,6 @@ figure.effect-layla figcaption::after {
 	content: '';
 	opacity: 0;
 }
-
 figure.effect-layla figcaption::before {
 	top: 50px;
 	right: 30px;
@@ -305,7 +270,6 @@ figure.effect-layla figcaption::before {
 	-webkit-transform-origin: 0 0;
 	transform-origin: 0 0;
 }
-
 figure.effect-layla figcaption::after {
 	top: 30px;
 	right: 50px;
@@ -316,13 +280,11 @@ figure.effect-layla figcaption::after {
 	-webkit-transform-origin: 100% 0;
 	transform-origin: 100% 0;
 }
-
 figure.effect-layla h2 {
 	padding-top: 85px;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 }
-
 figure.effect-layla p {
 	padding: 0.5em 2em;
 	text-transform: none;
@@ -334,9 +296,7 @@ figure.effect-layla p {
   padding-top: 50px;
   opacity: 10%; 
 }
-
-figure.effect-layla img,
- {
+figure.effect-layla img, {
 	width: 100% ;   /*change width in two places*/
 	height: auto;
 }
@@ -347,24 +307,20 @@ figure.effect-layla figcaption::before,
 figure.effect-layla figcaption::after,
 figure.effect-layla p {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
+	        transition: opacity 0.35s, transform 0.35s;
 }
-
 figure.effect-layla:hover img {   /*IMG ON HOVER*/
 	opacity: 1; 
   width:100%;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-  /*background: rgba(44, 66, 75, 1);*/
 }
-
 figure.effect-layla:hover figcaption::before,
 figure.effect-layla:hover figcaption::after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
 figure.effect-layla:hover h2,
 figure.effect-layla:hover p {
 	padding-top: 0px;
@@ -373,7 +329,6 @@ figure.effect-layla:hover p {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
-
 figure.effect-layla:hover figcaption::after,
 figure.effect-layla:hover h2,
 figure.effect-layla:hover p,
@@ -381,10 +336,11 @@ figure.effect-layla:hover img {
 	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
 }
+/*.collapse{display:none !important}
+.collapse.in{display:block !important}*/
 
 /*-----Top Section*/
 /*----------------*/
-
 .top-section {
 	height:99%;
 	border-bottom: 5px solid rgba(209, 211, 212, 1);
@@ -392,14 +348,12 @@ figure.effect-layla:hover img {
 
 /*-----Bottom Section*/
 /*-------------------*/
-
 .container {
   padding-right: 5px;
   padding-left: 5px;
   margin-right: 55px;
   margin-left: 55px;
 }
-
 .bottomsection {
   background-color: #263238;
   overflow: hidden;
@@ -409,7 +363,6 @@ figure.effect-layla:hover img {
 
 /*-----CSS Animation ONE*/
 /*----------------------*/
-
 .bottomsection--one-text {
     color: #000;
     background-color: black;
@@ -432,25 +385,20 @@ figure.effect-layla:hover img {
 
 /*-----CSS Animation TWO*/
 /*----------------------*/
-
 .bottomsection-two-left {
   background-color:;
   overflow: hidden;
   padding-top: 55px;
   margin: 0;
   width: 35%;
-/*  height:56%; piba logo bottom padding*/
   float: left;
 }
-
 .bottomsection-two-right {
   background-color:;
   overflow: hidden;
   width: 65%;
   float: right;
-/*  padding-bottom: 50px;*/
 }
-
 .bottomsection--two-text {
 	padding-right: 50px;
   padding-left: 50px;
@@ -466,7 +414,6 @@ figure.effect-layla:hover img {
   transition: all 1s ease .15s;
   will-change: transform;
 }
-
 .bottomsection--two-image {
    margin-left: 60px;
    opacity: 0;
@@ -478,11 +425,14 @@ figure.effect-layla:hover img {
    will-change: transform;
    /*margin-bottom: 25px;*/
 }
-
 .visible .bottomsection--two-image,
 .visible .bottomsection--two-text {
    transform: translateX(0);
    opacity: 1;
+}
+ul li {
+    margin-left: 5px;
+    color: #000;
 }
 
 /*-----CSS Animation THREE*/
@@ -501,20 +451,17 @@ figure.effect-layla:hover img {
     transition: all 1s ease .15s;
     will-change: transform;
 }
-
 .visible .bottomsection-right-button,
 .visible .bottomsection-right-button {
    transform: translateX(0);
    opacity: 1;
 }
-
 .btn {
     color:  #fff;
     background: rgba(91, 111, 123, .80);
     margin-top:25px;
     width: 15%;
 }
-
 .do-btn {
     position: static;
     left: 34%;
@@ -523,53 +470,11 @@ figure.effect-layla:hover img {
     margin-right: auto;
     border-radius: 0px !important;
 }
+.btn-large { border-radius: 2px; }
 
-.btn-large {
-    border-radius: 2px;
-}
-
-/*============================================================
-    Tablet (Portrait) Design for a width of 768px
-==============================================================*/
-
-@media (min-width: 768px) and (max-width: 991px) {
-.box {
-    display: block;
-  }
-  .grd_box {
-  position: relative;
-  top: 8%;
-  height:92%;
-  }
-  figure.effect-layla {
-  display: none;
-  }
-  ul.nav.navbar-nav.social-icons.navbar-right > .nav>li {
-    display:none;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-    .bottomsection {
-        min-height: 300px;
-    }
-    .visible .bottomsection--one-image,
-    .visible .bottomsection--one-text,
-    .visible .bottomsection--two-image,
-    .visible .bottomsection--two-text,
-    .visible .bottomsection--three-image,
-    .visible .bottomsection--three-text{
-        display: block;
-        font-size: 1.25em;
-        float: none;
-        height: auto;
-        margin: 20px auto 0;
-        width: auto;
-    }
-}
-
-/*-----Video background*/
+/*==============================*/
+/*  VIDEO BACKGROUND           */
+/* ===========================*/
 .fullscreen-bg {
     position: absolute;
     top: 0;
@@ -579,6 +484,7 @@ figure.effect-layla:hover img {
     overflow: hidden;
     z-index: -100;
     background-color: white;
+    /*display:none ;*/
   }
 .fullscreen-bg__video {
     position: absolute;
@@ -604,18 +510,90 @@ figure.effect-layla:hover img {
     height: 20%;
   }
 
-@media (min-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: 100%;
-    height: auto;
+/*==============================*/
+/*  MEDIA QUERIES              */
+/* ===========================*/
+
+/*==========================================================
+    Tablet (Portrait) Design for a width of 768px
+============================================================*/
+
+@media (max-width: 1250px) {
+  h2, .h2 {
+    font-size: 20px !important;
+    color:pink;
   }
+  .grid figure p { 
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+       -moz-column-count: 1; /* Firefox */
+            column-count: 1;
+    -webkit-column-gap: 25px; /* Chrome, Safari, Opera */
+       -moz-column-gap: 25px; /* Firefox */
+            column-gap: 25px;
+  }
+  .grid figure figcaption, .grid figure figcaption > a { overflow: scroll; }
+  .bottomsection--two-image { width: 83%; }
+
 }
 
-@media (max-aspect-ratio: 16/9) {
-  .fullscreen-bg__video {
-    width: auto;
-    height: 100%;
+@media (min-width: 768px) and (max-width: 991px) {
+  .box { display: block; }
+  .grd_box {
+    position: relative;
+    top: 8%;
+    height:92%;
   }
+  .fullscreen-bg__video {
+    display: none;
+  }
+  figure.effect-layla { display: none; }
+  .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: #ddd;
+    color:#333;
+    text-align: left;
+    font-size: 17px;
+    line-height:25px;
+    height: 65% !important;
+}
+    .nav>li { display:none !important; }
+.panel-default>.panel-heading {
+  color: #fff !important;
+  background: rgba(91, 111, 123, .80) !important;
+}
+.panel-title { 
+font-size:20px !important;
+text-transform: uppercase !important;
+}
+.bottomsection-two-left { width: 100%; }
+.bottomsection-two-right { width: 100%; }
+}
+
+@media screen and (max-width: 600px) {
+  .bottomsection { height: ; }
+    
+  .visible .bottomsection--one-image,
+  .visible .bottomsection--one-text,
+  .visible .bottomsection--two-image,
+  .visible .bottomsection--two-text,
+  .visible .bottomsection--three-image,
+  .visible .bottomsection--three-text{
+    display: block;
+    font-size: 1em;
+    float: none;
+    height: auto;
+    margin: 10px auto 0;
+    width: 96%;
+    }
+  .bottomsection--two-text {
+    padding-right: 10px;
+    padding-left: 10px; }  
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video { width: 100%; height: auto; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video { width: auto; height: 100%; }
 }
 
 @media (max-width: 767px) {
@@ -628,12 +606,49 @@ figure.effect-layla:hover img {
   .box {
     display: block;
   }
-    .grd_box {
-  position: relative;
-  top: 8%;
-  height:92%;
-}
-  figure.effect-layla {
-  display: none;
+  .grd_box {
+    position: relative;
+    top: 8%;
+    height:92%;
   }
+  figure.effect-layla {
+    display: none;
+  }
+ .nav>li {
+    display:none !important;
+  }
+  .panel-default>.panel-heading+.panel-collapse>.panel-body {
+    color: #333;
+    border-top-color: #ddd;
+    text-align: left;
+    font-size: 17px;
+    line-height:25px;
+    height: 65% !important;
+  }
+  .headertext { visibility: hidden; display:none; }
+  .headertextsmall { 
+    visibility: visible;
+    font-family: helvetica;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: white;
+    padding-top:12px;
+    padding-left: 5px; }
+  .panel-default>.panel-heading {
+    color: #fff !important;
+    background: rgba(91, 111, 123, .80) !important;
+  }
+  .panel-title { 
+    font-size:20px !important;
+    text-transform: uppercase !important; }
+  .panel-body {
+    overflow: scroll;
+    text-align: left;
+  }
+  .bottomsection-two-left { width: 100%; }
+  .bottomsection-two-right { width: 100%;}
+  .bottomsection--two-image { transition: none; }
+  .bottomsection-right-button { display: block; }
+  .btn { width: 100%; }
+  .bottomsection--two-text { padding-top: 25px; }
 }
