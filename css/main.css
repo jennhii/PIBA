@@ -222,6 +222,28 @@ div.arrow-down {
     border: 2px solid #008ECC;
 }
 
+
+/*-----------------*/
+
+ul.navbar-right.social-icons {
+	width: 35%;
+	margin-right: -7%;
+}
+
+#drop-nav {
+	height: 128%;
+	margin-left: 30%;
+	width: 18%;
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	margin-top: -2.75% !important;
+	margin-left: 70% !important;
+}
+
+/*-----------------*/
+
 .dropdown-toggle img {
     position: fixed;
     top: 0;
@@ -642,6 +664,8 @@ ul li {
 
 	.bottomsection--two-image { width: 83%; }
 }
+
+@media (min-width: 768px) and (max-width: 1199px) { .dropdown-menu { margin-left: 65% !important; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.box { display: block; }
