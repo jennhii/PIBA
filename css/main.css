@@ -225,7 +225,6 @@ div.arrow-down {
 .dropdown-toggle img {
     position: fixed;
     top: 0;
-    right: 5%;
     margin-top: 14px;
 }
 
@@ -643,6 +642,14 @@ ul li {
 	.bottomsection--two-image { width: 83%; }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .dropdown-menu {
+      position: relative;
+      margin-top:-4.8%;
+      margin-left: 37%;
+    }  
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 	.box { display: block; }
 	.grd_box {
@@ -673,6 +680,21 @@ ul li {
 	.bottomsection-two-right { width: 100%; }
 }
 
+@media only screen and (max-width: 815px) {
+    .dropdown-menu {
+    margin-top: -26.3%;
+    margin-left: .4in;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .dropdown-menu {
+        position: relative;
+        margin-top: -.25in;
+        margin-left: -.7in;
+    }
+}
+
 @media screen and (max-width: 600px) {    
 	.visible .bottomsection--one-image,
 	.visible .bottomsection--one-text,
@@ -691,6 +713,27 @@ ul li {
     	padding-right: 10px;
     	padding-left: 10px;
     }  
+}
+
+@media only screen and (max-width: 520px) {
+    .dropdown-menu {
+        position: relative;
+        margin-left: -1in;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .dropdown-menu {
+        margin-top: -.42in;
+        margin-left: -1in;
+    }
+}
+
+@media only screen and (max-width: 338px) {
+    .dropdown-menu {
+        margin-top: -.42in;
+        margin-left: -1in;
+    }
 }
 
 @media (min-aspect-ratio: 16/9) {
