@@ -231,14 +231,15 @@ ul.navbar-right.social-icons {
 }
 
 #drop-nav {
-	height: 128%;
-	margin-left: 30%;
+  float: right;
+  margin-right: 5%;
+/*	height: 128%;
+	
 	width: 18%;
-	cursor: pointer;
+	cursor: pointer;*/
 }
 
 .dropdown-menu {
-	margin-top: -2.75% !important;
 	margin-left: 70% !important;
 }
 
@@ -644,6 +645,10 @@ ul li {
     Tablet (Portrait) Design for a width of 768px
 ============================================================*/
 
+@media (min-width: 1250px) {
+  .lines-10 { font-size: 80% !important; }
+}
+
 @media (max-width: 1250px) {
 	h2, .h2 {
     	font-size: 20px !important;
@@ -664,17 +669,13 @@ ul li {
 	.bottomsection--two-image { width: 83%; }
 }
 
-<<<<<<< HEAD
 @media (min-width: 992px) and (max-width: 1199px) {
   .dropdown-menu {
       position: relative;
-      margin-top:-4.8%;
+      margin-top:-1.1% !important;
       margin-left: 37%;
-    }  
+    }
 }
-=======
-@media (min-width: 768px) and (max-width: 1199px) { .dropdown-menu { margin-left: 65% !important; } }
->>>>>>> f3c9491d75f54dffba7073f1f5837a52eeee8f9b
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.box { display: block; }
@@ -704,6 +705,11 @@ ul li {
 	}
 	.bottomsection-two-left { width: 100%; }
 	.bottomsection-two-right { width: 100%; }
+  .dropdown-menu {
+    position: relative;
+    margin-top: .4% !important;
+    margin-left: 37%;
+   }  
 }
 
 @media only screen and (max-width: 815px) {
@@ -715,9 +721,8 @@ ul li {
 
 @media only screen and (max-width: 767px) {
     .dropdown-menu {
-        position: relative;
-        margin-top: -.25in;
-        margin-left: -.7in;
+        margin-top: -.2in !important;
+        margin-left: 37%;
     }
 }
 
@@ -739,27 +744,6 @@ ul li {
     	padding-right: 10px;
     	padding-left: 10px;
     }  
-}
-
-@media only screen and (max-width: 520px) {
-    .dropdown-menu {
-        position: relative;
-        margin-left: -1in;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-    .dropdown-menu {
-        margin-top: -.42in;
-        margin-left: -1in;
-    }
-}
-
-@media only screen and (max-width: 338px) {
-    .dropdown-menu {
-        margin-top: -.42in;
-        margin-left: -1in;
-    }
 }
 
 @media (min-aspect-ratio: 16/9) {
@@ -788,7 +772,7 @@ ul li {
     	font-size: 17px;
     	line-height:25px;
     	height: 65% !important;
-	}
+	   }
   	.headertext {
   		visibility: hidden;
   		display:none;
