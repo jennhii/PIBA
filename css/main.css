@@ -669,6 +669,10 @@ ul li {
 	.bottomsection--two-image { width: 83%; }
 }
 
+@media (min-width: 1110px) { ul.nav.navbar-nav { padding-right: 10%; } }
+
+@media (max-width: 1109px) { ul.nav.navbar-nav { padding-right: initial; } }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .dropdown-menu {
       position: relative;
