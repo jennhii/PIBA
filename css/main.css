@@ -645,7 +645,7 @@ ul li {
     Tablet (Portrait) Design for a width of 768px
 ============================================================*/
 
-@media (min-width: 1250px) {
+@media (min-width: 1450px) {
   .lines-10 { font-size: 80% !important; }
 }
 
