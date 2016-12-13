@@ -730,12 +730,6 @@ ul li {
 	}
     .nav>li { display:none !important; }
     
-/*	.panel-default>.panel-heading {
-		color: #fff !important;
-		background: rgba(91, 111, 123, .80) !important;
-	}
-*/
-
 	.panel-title { 
 		font-size:20px !important;
 		text-transform: uppercase !important;
