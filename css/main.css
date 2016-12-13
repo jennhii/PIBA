@@ -31,6 +31,33 @@
 	font-size:0;
 }
 
+/* ------------------------ Added for Mobile ----------------------------- */
+
+#accord {
+	height: 100%;
+	overflow-y: scroll;
+}
+
+.no-padding { padding: 0 !important; }
+
+.no-background { background: 0 !important; }
+
+.panel-heading > img { width: 100%; }
+
+p.mobile {
+	color: #333333;
+	text-align: left;
+	margin-top: 10%;
+}
+
+#accordion > .panel > .panel-heading {
+    	color: #FFFFFF;
+		background: rgba(91, 111, 123, .80);
+}
+
+
+/* ----------------------------------------------------------------------- */
+
 .box {
 	height:100%;
 	display:inline-block;
@@ -475,6 +502,10 @@ figure.effect-layla:hover img {
   width: 100%;
 }
 
+.no-accordion {
+	
+}
+
 /*-----CSS Animation ONE*/
 /*----------------------*/
 
@@ -503,7 +534,6 @@ figure.effect-layla:hover img {
 /*----------------------*/
 
 .bottomsection-two-left {
-  background-color:;
   overflow: hidden;
   padding-top: 55px;
   margin: 0;
@@ -699,10 +729,13 @@ ul li {
 		height: 65% !important;
 	}
     .nav>li { display:none !important; }
-	.panel-default>.panel-heading {
+    
+/*	.panel-default>.panel-heading {
 		color: #fff !important;
 		background: rgba(91, 111, 123, .80) !important;
 	}
+*/
+
 	.panel-title { 
 		font-size:20px !important;
 		text-transform: uppercase !important;
