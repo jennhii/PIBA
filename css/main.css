@@ -728,8 +728,7 @@ ul li {
 		line-height:25px;
 		height: 65% !important;
 	}
-    .nav>li { display:none !important; }
-    
+   .nav>li { display:none !important; }
 	.panel-title { 
 		font-size:20px !important;
 		text-transform: uppercase !important;
