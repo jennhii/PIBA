@@ -500,10 +500,7 @@ figure.effect-layla:hover img {
   overflow: hidden;
   padding: 0;  
   width: 100%;
-}
-
-.no-accordion {
-	
+  border-bottom: 8px solid #ad0000;
 }
 
 /*-----CSS Animation ONE*/
@@ -562,6 +559,7 @@ figure.effect-layla:hover img {
   transform: translateX(300px);
   transition: all 1s ease .15s;
   will-change: transform;
+  text-indent: hanging;
 }
 .bottomsection--two-image {
    margin-left: 60px;
@@ -573,6 +571,10 @@ figure.effect-layla:hover img {
    transition: all 1s ease .15s;
    will-change: transform;
 }
+
+.fullindent { margin-left: -2em; 
+ text-indent: 2em 
+ }
 
 .visible .bottomsection--two-image,
 .visible .bottomsection--two-text {
@@ -609,10 +611,11 @@ ul li {
 }
 
 .btn {
-    color:  #fff;
-    background: rgba(91, 111, 123, .80);
+    color:  #000;
+    background: rgba(209, 211, 212, 1);
     margin-top:25px;
-    width: 15%;
+    width: 17%;
+    border: 0px !important;
 }
 
 .do-btn {
@@ -625,6 +628,13 @@ ul li {
 }
 
 .btn-large { border-radius: 2px; }
+
+.indent {
+    padding-left: 1.5em;
+    text-indent:-1em;
+    color: #333;
+    text-align: left;
+}
 
 /*==============================*/
 /*  VIDEO BACKGROUND           */
@@ -699,7 +709,10 @@ ul li {
 	.bottomsection--two-image { width: 83%; }
 }
 
-@media (min-width: 1110px) { ul.nav.navbar-nav { padding-right: 10%; } }
+@media (min-width: 1110px) { ul.nav.navbar-nav { padding-right: 10%; } 
+  .btn { display: initial !important;}
+}
+
 
 @media (max-width: 1109px) { ul.nav.navbar-nav { padding-right: initial; } }
 
@@ -740,6 +753,7 @@ ul li {
     margin-top: .4% !important;
     margin-left: 37%;
    }  
+    .btn { width: 100%; }
 }
 
 @media only screen and (max-width: 815px) {
@@ -754,6 +768,7 @@ ul li {
         margin-top: -.2in !important;
         margin-left: 37%;
     }
+      .btn { width: 100%; }
 }
 
 @media screen and (max-width: 600px) {    
@@ -832,6 +847,5 @@ ul li {
 	.bottomsection-two-right { width: 100%;}
 	.bottomsection--two-image { transition: none; }
 	.bottomsection-right-button { display: block; }
-	.btn { width: 100%; }
 	.bottomsection--two-text { padding-top: 25px; }
 }
